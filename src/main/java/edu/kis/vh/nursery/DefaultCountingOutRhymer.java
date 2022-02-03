@@ -18,6 +18,7 @@ public class DefaultCountingOutRhymer {
 		this.total = total;
 	}
 
+
 	public void countIn(final int in) {
 		if (!isFull())
 			numbers[++total] = in;
@@ -31,6 +32,7 @@ public class DefaultCountingOutRhymer {
 		return total == LAST_ELEMENT;
 	}
 
+	//TODO: change method name to be more specific
 	protected int peekaboo() {
 		if (callCheck())
 			return -1;
